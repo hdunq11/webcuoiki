@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H&A Kingdoms - Decide smarter, play better</title>
+    <meta
+      name="description"
+      content="Đây là web review được tạo bởi Hương và An"
+    />
+    <!--
+    -favicon
+-->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--
+    -google font link
+-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!--
+    -custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+   - images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png" />
+  </head>
+  <body>
+    <!--
+    #SIGN UP
+-->
+
+    <div id="wrapper">
+      <div class="signup">
+        <h1 class="signup-heading">Sign Up</h1>
+        <button class="signup-social">
+          <i class="fa fa-google signup-social-icon"></i>
+          <span class="signup-social-text">Sign Up with Google</span>
+        </button>
+        <div class="signup-or"><span>Or</span></div>
+        <form action="#" class="signup-form" autocomplete="off">
+          <label for="fullname" class="signup-label">Full Name</label>
+          <input
+            type="text"
+            id="fullname"
+            class="signup-input"
+            placeholder="Eg: Phuoc An"
+            required
+          />
+          <label for="email" class="signup-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="signup-input"
+            placeholder="Eg: an123@gmail.com"
+            required
+          />
+          <label for="password" class="signup-label">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="signup-input"
+            placeholder="Eg: 123456"
+            required
+          />
+
+          <a href="login.html" class="signup-submit"> Sign Up </a>
+        </form>
+        <p class="signup-already">
+          <span> Already have an account?</span>
+          <a href="login.html" class="signup-login-link">Login</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
