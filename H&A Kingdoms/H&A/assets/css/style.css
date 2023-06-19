@@ -1403,6 +1403,7 @@ section {
 .signup-login-link:hover {
   color: #788de1;
 }
+
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
@@ -1690,7 +1691,7 @@ section {
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1825,7 +1826,173 @@ input:valid ~ label {
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+@media (min-width: 390px) {
+  /**
+*HEADER
+*/
 
+  .header .logo img {
+    width: 120px;
+    margin: 0px 30px;
+  }
+
+  /**
+*FOOTER
+*/
+
+  .footer-top .container {
+    grid-template-columns: 1fr;
+    margin: 20px 50px;
+  }
+  /*  HERO*/
+  .hero {
+    display: none;
+  }
+  /* HOME */
+  .upcoming-card .card-banner {
+    width: 50%;
+    padding-top: 30px;
+    margin-right: 20px;
+  }
+  .upcoming-card.left .card-meta {
+    right: -10%;
+    bottom: -39%;
+  }
+  .upcoming-card.right .card-title {
+    padding-bottom: -10%;
+    margin-top: -20px;
+  }
+  .upcoming-card.left .card-title {
+    margin-right: 160px;
+    margin-top: -20px;
+  }
+  .upcoming-time {
+    margin-block: 70px 30px;
+  }
+  #tournament {
+    margin-top: 100px;
+  }
+  /* TOURNAMENT */
+  /* .header .container {
+    width: 350px;
+  } */
+  /* .upcoming-card {
+    padding-top: 20px;
+  } */
+  /* .game-inner {
+    padding-top: 200px;
+    padding-left: 0px;
+  }
+  .game-inner .detail {
+    display: flex;
+    margin-left: -182px;
+  }
+  .sum {
+    width: 100%;
+    display: inline;
+  }
+  .sum .tournament {
+    width: 100%;
+    margin-left: -178px;
+  }
+  .sum .tournament .name_battle .detail {
+    display: inline;
+  }
+  .sum .tournament .name_battle .detail .vs {
+    margin-top: 23px;
+    margin-left: 96px;
+  }
+  .sum .tournament .name_battle .detail .vs h3 {
+    margin-left: 38px;
+  }
+  .sum .tournament .name_battle .detail .team2 {
+    display: flex;
+    margin-top: 53px;
+    margin-left: 105px;
+  }
+  .sum .tournament .yt2 {
+    width: 100%;
+    height: 200px;
+  }
+  .sum .tournament .para {
+    padding: 20px 0px;
+    width: 100%;
+  }
+  .sum .tournament .para p {
+    display: flex;
+    width: 100%;
+  }
+  .sum .tournament .mien {
+    padding-left: 50px;
+  }
+  .sum .tournament .ngang {
+    margin-bottom: 20px;
+  }
+  .sum .tournament .latest-matches .muc {
+    background-color: #373941;
+    display: inline;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  .sum .tournament .latest-matches .muc .time {
+    width: 100%;
+    text-align: center;
+    margin-left: 138px;
+  }
+  .sum .tournament .latest-matches .muc .time h3 {
+    background-color: black;
+    width: 80px;
+    border-radius: 5px;
+    margin-left: -10px;
+  }
+  .sum .tournament .latest-matches .muc .team2 {
+    width: 35%;
+    padding: 10px 0px;
+    margin-left: 110px;
+  }
+  .sum .tournament .latest-matches .muc .team2 img {
+    width: 100px;
+    height: 100px;
+    margin-left: 97px;
+    margin-top: 15px;
+  }
+  .sum .side-right {
+    width: 100%;
+    margin-left: -186px;
+  } */
+
+  /* .sum .side-right .top3-recent .content .content-detail {
+    margin-left: 10px;
+    display: inline;
+  }
+  .sum .side-right .nextMatches .matches .logo {
+    padding: 20px 0px;
+  }
+  .sum .side-right .nextMatches .matches .le button {
+    border-radius: 10px;
+    border: solid #9841ff;
+    background-color: #9841ff;
+    margin-top: 30px;
+    margin-left: 0px;
+    padding: 5px 5px;
+    height: 40px;
+  }
+  .sum .side-right .nextMatches .matches .chan button {
+    border-radius: 10px;
+    border: solid #9841ff;
+    background-color: #9841ff;
+    margin-top: 25px;
+    margin-left: 0px;
+    padding: 5px 5px;
+    height: 40px;
+  } */
+  /* LOGIN */
+  .form-box-lg {
+    margin: 10px 50px;
+    padding: 0px 10px;
+  }
+}
 @media (min-width: 575px) {
   /**
 *REUSED STYLE
@@ -1844,7 +2011,9 @@ input:valid ~ label {
   .header .logo img {
     width: 160px;
   }
-
+  .hero {
+    display: grid;
+  }
   /**
 *UPCOMING
 */
@@ -1886,6 +2055,9 @@ input:valid ~ label {
 *REUSED STYLE
 */
 
+  .header .container {
+    width: 90%;
+  }
   .container {
     max-width: 720px;
   }
@@ -1917,7 +2089,7 @@ input:valid ~ label {
 *UPCOMING
 */
 
-  .upcoming-card::before {
+  /* .upcoming-card::before {
     height: 110px;
   }
 
@@ -1940,6 +2112,48 @@ input:valid ~ label {
 
   .upcoming-time .time {
     --fontSize-1: 5rem;
+  } */
+  /**
+*UPCOMING
+*/
+
+  .upcoming-card::before {
+    height: 110px;
+  }
+
+  .upcoming-card .card-meta {
+    padding-block: 12px;
+    bottom: 20px;
+  }
+
+  .upcoming-card .card-title {
+    --fontSize-3: 2.8rem;
+    padding-bottom: 100px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .upcoming-card.left .card-title {
+    margin-inline-end: 50px;
+    text-align: center;
+  }
+  .upcoming-card.left .card-meta {
+    right: -10%;
+    bottom: -3%;
+  }
+  .upcoming-time {
+    margin-block: 70px 30px;
+  }
+  .upcoming-card.right .card-meta {
+    left: 20%;
+    bottom: 8%;
+  }
+
+  .upcoming-time .time {
+    --fontSize-1: 5rem;
+  }
+  .upcoming-card .card-banner {
+    padding-top: 30px;
+    width: 200px;
   }
 
   /**
@@ -1948,7 +2162,89 @@ input:valid ~ label {
   .news-list {
     grid-template-columns: 1fr 1fr;
   }
+  /* TOURNAMENTS */
 
+  .header {
+    width: 100%;
+  }
+  .sum {
+    display: inline;
+  }
+  main {
+    padding: 0px 50px;
+    width: 100%;
+  }
+  .sum .tournament {
+    width: 100%;
+  }
+  .sum .tournament .name_battle .detail .vs {
+    width: 30%;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  .sum .tournament .name_battle .detail .team2 {
+    display: flex;
+    margin-top: 220px;
+    margin-left: -20px;
+  }
+  .sum .tournament .yt2 {
+    width: 100%;
+    height: 400px;
+  }
+  .sum .tournament .name_battle .detail {
+    padding: 20px 20px;
+    display: flex;
+    width: 100%;
+  }
+  .sum .tournament .ngang .hr2 {
+    width: 30%;
+  }
+  .sum .tournament .latest-matches .muc .time {
+    /* text-align: center; */
+    /* margin-left: 70px; */
+    margin-top: 10px;
+    width: 31%;
+  }
+  .sum .tournament .latest-matches .muc .time h3 {
+    margin-left: 35%;
+  }
+
+  .sum .tournament .latest-matches .muc .team2 {
+    width: 20%;
+    padding-top: 5px;
+    margin-left: -38px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .sum .tournament .latest-matches .muc .team2 h2 {
+    width: 50%;
+    padding: 20px 20px;
+    /* margin-left: 10px; */
+  }
+  .sum .tournament .latest-matches .muc .team2 img {
+    margin-left: 70px;
+    margin-top: 15px;
+  }
+  .sum .side-right .latest-video .top {
+    width: 100%;
+  }
+  .sum .side-right .top3-recent .top {
+    width: 100%;
+  }
+  .sum .side-right .nextMatches .top {
+    width: 100%;
+  }
+  .sum .side-right .popular .top {
+    width: 100%;
+  }
+  /* REVIEW GAME */
+  .news .news-content .right .btn {
+    margin: 140px 40px;
+  }
+  /* GAME-INNER */
+  .sum .side-left {
+    width: 100%;
+  }
   /**
 *CUSTOM CURSOR
 */
@@ -2086,7 +2382,7 @@ input:valid ~ label {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1020px) {
   /**
   *RESUED STYLE
   */
@@ -2128,7 +2424,14 @@ input:valid ~ label {
   .upcoming-card.right .card-meta {
     left: 35%;
   }
-
+  .upcoming-card.left .card-title {
+    margin-left: -74px;
+    margin-top: 18px;
+  }
+  .upcoming-card.right .card-title {
+    margin-right: 50px;
+    margin-top: 21px;
+  }
   .upcoming-time .time {
     --fontSize-1: 6.2rem;
   }
@@ -2144,126 +2447,128 @@ input:valid ~ label {
   .footer .logo img {
     width: 205px;
   }
-}
-@media (max-width: 1490px) {
-  /* game-inner */
+  /* TOURNAMENT */
   .sum {
-    display: inline;
-  }
-  .sum .side-left {
-    width: 100%;
-  }
-  .sum .side-right {
-    padding-left: 20px;
-    padding-top: 40px;
-  }
-  /* review game */
-  .news .news-content .right .btn {
-    margin: 140px 100px;
-  }
-  /* tournament */
-  .sum .tournament {
-    width: 100%;
-  }
-  .sum .tournament .latest-matches .muc .time h3 {
-    margin-left: 120px;
-  }
-}
-@media (max-width: 964px) {
-  .sum .side-left .intro .right .para {
-    display: inline;
-    margin: 10px 50px;
-    text-align: center;
-  }
-  /* review game */
-  article {
-    width: 100%;
-  }
-  .news .news-content {
-    display: inline;
-  }
-  .news .news-content .left {
-    width: 100%;
-  }
-  .news .news-content .right {
-    width: 100%;
     display: flex;
   }
-  .news .news-content .right .btn {
-    margin: 40px 80px;
+  .sum .tournament {
+    width: 65%;
   }
-  .news .news-content .right .notbut .author {
-    width: 150px;
-  }
-  /* tournament */
-  .sum .tournament .name_battle {
-    height: 500px;
-  }
-  .sum .tournament .name_battle .detail {
-    display: inline;
-  }
-  .sum .tournament .name_battle .detail .team1 {
-    padding-top: 10px;
-    padding-left: 20px;
+  .sum .side-right {
+    width: 35%;
   }
   .sum .tournament .name_battle .detail .vs {
-    padding-top: 30px;
-    padding-left: 200px;
-    text-align: center;
-  }
-  .sum .tournament .name_battle .detail .vs h3 {
-    padding-left: 45px;
+    margin-top: -91px;
   }
   .sum .tournament .name_battle .detail .team2 {
-    padding-top: 50px;
-    padding-left: 270px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: -20px;
   }
-  .sum .tournament .mien {
-    padding-left: 200px;
+  .sum .tournament .yt2 {
+    width: 100%;
+    height: 500px;
   }
-  .sum .tournament .ngang .hr2 {
-    width: 24%;
+  .sum .tournament .ngang i {
+    font-size: 30px;
+    padding: 15px 5px;
+  }
+  .sum .tournament .latest-matches {
+    width: 100%;
+    font-size: smaller;
   }
   .sum .tournament .latest-matches .muc {
-    height: 500px;
+    background-color: #373941;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  .sum .tournament .latest-matches .muc .team1 {
+    width: 35%;
+    padding: 10px 10px;
+    display: flex;
+  }
+  .sum .tournament .latest-matches .muc .team1 img {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+  .sum .tournament .latest-matches .muc .team1 h2 {
+    padding: 10px 10px;
+    margin-top: 10px;
+    width: 50%;
+  }
+  .sum .tournament .latest-matches .muc .team1 h2:hover {
+    color: red;
   }
   .sum .tournament .latest-matches .muc .time {
     width: 30%;
     text-align: center;
-    padding: 130px 0px;
-    margin-top: 20px;
+    padding: 10px 0px;
+    margin-top: 15px;
+  }
+  .sum .tournament .latest-matches .muc .time h3 {
+    background-color: black;
+    width: 80px;
+    border-radius: 5px;
+    margin-left: 50px;
   }
   .sum .tournament .latest-matches .muc .team2 {
-    /* width: 150%; */
-    padding-top: 300px;
+    width: 35%;
+    padding-top: 10px;
+    padding-right: 40px;
     display: flex;
-    padding-right: 30px;
+  }
+  .sum .tournament .latest-matches .muc .team2 img {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 15px;
   }
   .sum .tournament .latest-matches .muc .team2 h2 {
-    width: 50px;
+    width: 50%;
+    padding: 20px 0px;
+    margin-left: 10px;
   }
-}
-@media (max-width: 885px) {
-  /* game - inner */
-  .sum .side-left .detail .yt1 {
-    width: 100%;
-    height: 300px;
-  }
-  .sum .side-left .detail .mien {
-    padding-left: 200px;
-  }
-  .sum .side-right .nextMatches .matches .le button {
-    padding: 0px 10px;
-    margin-left: 0px;
-    margin-right: 20px;
+  .sum .tournament .latest-matches .muc .team2 h2:hover {
+    color: red;
   }
   .sum .side-right .nextMatches .matches .chan button {
-    padding: 0px 10px;
-    margin-left: 0px;
-    margin-right: 20px;
+    border-radius: 10px;
+    border: solid rgb(152, 65, 255);
+    background-color: rgb(152, 65, 255);
+    margin-top: 25px;
+    margin-left: 30px;
+    padding: 5px;
+    height: 40px;
   }
-  /* review game */
+  .sum .side-right .nextMatches .matches .le button {
+    border-radius: 10px;
+    border: solid rgb(152, 65, 255);
+    background-color: rgb(152, 65, 255);
+    margin-top: 25px;
+    margin-left: 30px;
+    padding: 5px;
+    height: 40px;
+  }
+  .sum .tournament .name_battle .detail {
+    height: 166px;
+  }
+  /* REVIEW GAME */
+  .news .news-content {
+    width: 100%;
+    display: flex;
+  }
+  .news .news-content .left {
+    width: 60%;
+  }
+  .news .news-content .right {
+    width: 40%;
+  }
   .news .news-content .right .btn {
-    margin: 40px 60px;
+    margin-top: 140px;
+    margin-left: 323px;
   }
 }
