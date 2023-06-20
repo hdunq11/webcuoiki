@@ -1198,6 +1198,7 @@ section {
 }
 .news .news-content .left p {
   font-size: 15px;
+  text-align: justify;
 }
 .news .news-content .right {
   width: 30%;
@@ -2054,9 +2055,11 @@ input:valid ~ label {
   /**
 *REUSED STYLE
 */
-
+  .header .btn {
+    display: grid;
+  }
   .header .container {
-    width: 90%;
+    width: 73%;
   }
   .container {
     max-width: 720px;
